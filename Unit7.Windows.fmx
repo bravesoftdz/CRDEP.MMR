@@ -1,0 +1,37 @@
+inherited Form7_Windows: TForm7_Windows
+  Caption = 'Help'
+  ClientHeight = 494
+  ClientWidth = 673
+  OnCloseQuery = FormCloseQuery
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 635.000000000000000000
+    Visible = False
+    inherited Label1: TLabel
+      Size.Width = 587.000000000000000000
+    end
+  end
+  inherited Image1: TImage
+    MultiResBitmap.Height = 388
+    MultiResBitmap.Width = 580
+    Size.Width = 673.000000000000000000
+    Size.Height = 494.000000000000000000
+  end
+  inherited Memo1: TMemo
+    StyledSettings = [Family]
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.Style = [fsBold]
+    Enabled = False
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Opacity = 0.600000023841857900
+    RotationCenter.X = 1.000000000000000000
+    Scale.X = 0.500000000000000000
+    Size.Width = 1336.000000000000000000
+    Size.Height = 484.000000000000000000
+    Viewport.Width = 1316.000000000000000000
+    Viewport.Height = 480.000000000000000000
+  end
+end

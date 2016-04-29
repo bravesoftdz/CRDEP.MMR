@@ -1,0 +1,13 @@
+inherited Form3_Windows: TForm3_Windows
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'A Propose'
+  ClientHeight = 494
+  ClientWidth = 774
+  Position = DesktopCenter
+  OnCloseQuery = FormCloseQuery
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 774.000000000000000000
+    Visible = False
+  end
+end

@@ -1,0 +1,111 @@
+inherited Form2_NmXhdpiPh: TForm2_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited Image1: TImage
+    MultiResBitmap.Height = 608
+    MultiResBitmap.Width = 1136
+    Size.Width = 400.000000000000000000
+    Size.Height = 503.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 400.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 304.000000000000000000
+    end
+    inherited btn_Setting: TButton
+      Position.X = 352.000000000000000000
+    end
+  end
+  inherited btn_start: TButton
+    Position.Y = 561.000000000000000000
+    Size.Width = 360.000000000000000000
+  end
+  inherited Rectangle2: TRectangle
+    Position.Y = 204.000000000000000000
+    Size.Width = 360.000000000000000000
+    inherited Label2: TLabel
+      Size.Width = 340.000000000000000000
+    end
+    inherited Password: TEdit
+      Size.Width = 310.000000000000000000
+    end
+    inherited Rectangle3: TRectangle
+      Size.Width = 360.000000000000000000
+      inherited btn_Close: TButton
+        Size.Width = 180.000000000000000000
+      end
+      inherited login: TButton
+        Position.X = 180.000000000000000000
+        Size.Width = 180.000000000000000000
+      end
+      inherited Rectangle4: TRectangle
+        Position.X = 180.000000000000000000
+      end
+    end
+    inherited CheckBox2: TCheckBox
+      Size.Width = 310.000000000000000000
+    end
+  end
+  inherited Rectangle5: TRectangle
+    Position.X = 20.000000000000000000
+    Position.Y = 204.000000000000000000
+    Size.Width = 360.000000000000000000
+    inherited Label3: TLabel
+      Size.Width = 340.000000000000000000
+    end
+    inherited Pwd: TEdit
+      Size.Width = 310.000000000000000000
+    end
+    inherited Rectangle6: TRectangle
+      Size.Width = 360.000000000000000000
+      inherited Cancel: TButton
+        Size.Width = 180.000000000000000000
+      end
+      inherited Confirmer: TButton
+        Position.X = 180.000000000000000000
+        Size.Width = 180.000000000000000000
+      end
+      inherited Rectangle7: TRectangle
+        Position.X = 180.000000000000000000
+      end
+    end
+    inherited CheckBox1: TCheckBox
+      Size.Width = 310.000000000000000000
+    end
+  end
+  inherited Rectangle8: TRectangle
+    Position.X = 20.000000000000000000
+    Position.Y = 204.000000000000000000
+    Size.Width = 360.000000000000000000
+    inherited Label4: TLabel
+      Size.Width = 340.000000000000000000
+    end
+    inherited Rectangle9: TRectangle
+      Size.Width = 360.000000000000000000
+      inherited close_chois: TButton
+        Size.Width = 180.000000000000000000
+      end
+      inherited btn_chois: TButton
+        Position.X = 180.000000000000000000
+        Size.Width = 180.000000000000000000
+      end
+      inherited Rectangle10: TRectangle
+        Position.X = 180.000000000000000000
+      end
+    end
+    inherited RadioButton1: TRadioButton
+      Size.Width = 320.000000000000000000
+    end
+    inherited RadioButton2: TRadioButton
+      Size.Width = 320.000000000000000000
+    end
+  end
+  inherited FDGUIxErrorDialog1: TFDGUIxErrorDialog
+    Left = 40
+    Top = 432
+  end
+  inherited FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Top = 424
+  end
+end

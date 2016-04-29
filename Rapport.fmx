@@ -1,0 +1,2656 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 172
+  ClientWidth = 420
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnCloseQuery = FormCloseQuery
+  DesignerMasterStyle = 0
+  object print: TButton
+    Position.X = 88.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'print'
+    OnClick = printClick
+  end
+  object frxReport1: TfrxReport
+    Version = '2.3.4'
+    DotMatrixReport = False
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFullScreen, pbOutline, pbThumbnails, pbPageSetup, pbEdit, pbNavigator, pbClose]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 42393.626545787000000000
+    ReportOptions.LastChange = 42399.455650092600000000
+    ReportOptions.IsFMXReport = True
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      ''
+      'begin'
+      ''
+      'end.')
+    Left = 32
+    Top = 16
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end
+      item
+        DataSet = frxDBDataset2
+        DataSetName = 'frxDBDataset2'
+      end
+      item
+        DataSet = frxDBDataset3
+        DataSetName = 'frxDBDataset3'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      Orientation = poLandscape
+      PaperWidth = 297.000000000000000000
+      PaperHeight = 210.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        Height = 154.960629921260000000
+        Top = 18.897650000000000000
+        Width = 1046.929810000000000000
+        object Memo1: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 3.779530000000001000
+          Width = 1035.591220000000000000
+          Height = 102.047310000000000000
+          ShowHint = False
+          Color = xFF00CCFF
+          Font.Name = '@Arial Unicode MS'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -24.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Tableau de calcul hydraulique par le programme CRDEP.MMR 2016'
+            '')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo14: TfrxMemoView
+          Left = 249.448980000000000000
+          Top = 109.606370000000000000
+          Width = 566.929500000000000000
+          Height = 45.354330710000000000
+          ShowHint = False
+          Color = xFFFDBD97
+          Font.Name = '@Arial Unicode MS'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -24.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Conduite de distribution principale')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 26.456710000000000000
+        Top = 272.126160000000000000
+        Width = 1046.929810000000000000
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+        RowCount = 0
+        object frxDBDataset1NAmont: TfrxMemoView
+          Left = 3.338590000000000000
+          Top = 0.779530000000022500
+          Width = 74.834645670000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'NAmont'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."NAmont"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1NAval: TfrxMemoView
+          Left = 77.944959999999990000
+          Top = 0.779530000000022500
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'NAval'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."NAval"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1DCm: TfrxMemoView
+          Left = 152.787570000000000000
+          Top = 0.779530000000022500
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'DC(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."DC(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1DNm: TfrxMemoView
+          Left = 247.189240000000000000
+          Top = 0.779530000000022500
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'DN(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."DN(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1TC: TfrxMemoView
+          Left = 341.472790000000000000
+          Top = 0.779530000000022500
+          Width = 94.110236220000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'TC'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."TC"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1Vms: TfrxMemoView
+          Left = 435.205010000000000000
+          Top = 0.779530000000022500
+          Width = 94.110236220000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'V(m/s)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."V(m/s)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1PDCTm: TfrxMemoView
+          Left = 528.929500000000000000
+          Top = 0.779530000000022500
+          Width = 94.866141730000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'PDCT(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."PDCT(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1CPRm: TfrxMemoView
+          Left = 624.520100000000000000
+          Top = 0.779530000000022500
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'CPR(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."CPR(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1CP1m: TfrxMemoView
+          Left = 719.465060000000000000
+          Top = 0.779530000000022500
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'CP1(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."CP1(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1PSAmontmce: TfrxMemoView
+          Left = 813.717070000000000000
+          Top = 0.779530000000022500
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'PSAmont(m.c.e)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."PSAmont(m.c.e)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1PSAvalmce: TfrxMemoView
+          Left = 927.221090000000000000
+          Top = 0.779530000000022500
+          Width = 113.763779530000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'PSAval(m.c.e)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."PSAval(m.c.e)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object Header1: TfrxHeader
+        Height = 22.677180000000000000
+        Top = 230.551330000000000000
+        Width = 1046.929810000000000000
+        object Memo2: TfrxMemoView
+          Left = 2.779530000000000000
+          Top = 1.000000000000000000
+          Width = 75.590551181102400000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NAmont')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo3: TfrxMemoView
+          Left = 78.165430000000000000
+          Top = 1.000000000000000000
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NAval')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo4: TfrxMemoView
+          Left = 153.346630000000000000
+          Top = 1.000000000000000000
+          Width = 94.110236220472400000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'DC (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo5: TfrxMemoView
+          Left = 247.189240000000000000
+          Top = 1.000000000000000000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'DN (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo6: TfrxMemoView
+          Left = 341.031850000000000000
+          Top = 1.000000000000000000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'TC')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo7: TfrxMemoView
+          Left = 719.465060000000000000
+          Top = 1.000000000000000000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'CP1(m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo8: TfrxMemoView
+          Left = 813.717070000000000000
+          Top = 1.000000000000000000
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PSAmont(m.c.e)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo9: TfrxMemoView
+          Left = 529.386210000000000000
+          Top = 1.000000000000000000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PDCT (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo10: TfrxMemoView
+          Left = 434.984540000000000000
+          Top = 1.000000000000000000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'V (m/s)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo11: TfrxMemoView
+          Left = 624.315400000000000000
+          Top = 1.000000000000000000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'CPR(m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo12: TfrxMemoView
+          Left = 927.441560000000000000
+          Top = 1.000000000000000000
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PSAval(m.c.e)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object MasterData2: TfrxMasterData
+        Height = 23.811023620000000000
+        Top = 411.968770000000000000
+        Width = 1046.929810000000000000
+        DataSet = frxDBDataset3
+        DataSetName = 'frxDBDataset3'
+        RowCount = 0
+        object Memo37: TfrxMemoView
+          Left = 2.000000000000000000
+          Top = 0.755905509999991000
+          Width = 37.795275590000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."NT"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo13: TfrxMemoView
+          Left = 113.338590000000000000
+          Top = 0.779530000000022500
+          Width = 58.582677170000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."NAmont"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo15: TfrxMemoView
+          Left = 171.944960000000000000
+          Top = 0.779530000000022500
+          Width = 54.803149610000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."NAval"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo16: TfrxMemoView
+          Left = 226.787570000000000000
+          Top = 0.779530000000022500
+          Width = 86.929133858267700000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."DC(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo17: TfrxMemoView
+          Left = 314.189240000000000000
+          Top = 0.779530000000022500
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."DN(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo18: TfrxMemoView
+          Left = 401.472790000000000000
+          Top = 0.779530000000022500
+          Width = 94.110236220000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."TC"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo19: TfrxMemoView
+          Left = 495.205010000000000000
+          Top = 0.779530000000022500
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."V(m/s)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo20: TfrxMemoView
+          Left = 581.929500000000000000
+          Top = 0.779530000000022500
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."PDCT(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo21: TfrxMemoView
+          Left = 669.520100000000000000
+          Top = 0.779530000000022500
+          Width = 75.590551181102400000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset3."Q Corrige(m3/s)">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo22: TfrxMemoView
+          Left = 745.465060000000000000
+          Top = 0.779530000000022500
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset3."CPAmont(m)">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo23: TfrxMemoView
+          Left = 896.717070000000000000
+          Top = 0.779530000000022500
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."PSAmont(m.c.e)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo24: TfrxMemoView
+          Left = 972.221090000000000000
+          Top = 0.779530000000022500
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."PSAval(m.c.e)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo40: TfrxMemoView
+          Left = 821.142240000000000000
+          Top = 0.755905509999991000
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset3."CPAval(m)">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo43: TfrxMemoView
+          Left = 39.574830000000000000
+          Top = 0.881880000000023800
+          Width = 37.795275590000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."MP"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo44: TfrxMemoView
+          Left = 76.590599999999990000
+          Top = 0.881880000000023800
+          Width = 37.795275590000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."MA"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object Header2: TfrxHeader
+        Height = 76.590585350000000000
+        Top = 317.480520000000000000
+        Width = 1046.929810000000000000
+        object Memo25: TfrxMemoView
+          Left = 113.779530000000000000
+          Top = 54.803149609999990000
+          Width = 58.582677165354300000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NAmont')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo26: TfrxMemoView
+          Left = 172.165430000000000000
+          Top = 54.803149609999990000
+          Width = 54.803149610000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NAval')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo27: TfrxMemoView
+          Left = 227.346630000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133858267700000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'DC (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo28: TfrxMemoView
+          Left = 314.189240000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'DN (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo29: TfrxMemoView
+          Left = 401.031850000000000000
+          Top = 54.803149609999990000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'TC')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo30: TfrxMemoView
+          Left = 745.465060000000000000
+          Top = 54.803149609999990000
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'CPAmont')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo31: TfrxMemoView
+          Left = 896.717070000000000000
+          Top = 54.803149609999990000
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PSAmont')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo32: TfrxMemoView
+          Left = 582.386210000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PDCT (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo33: TfrxMemoView
+          Left = 494.984540000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'V (m/s)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo34: TfrxMemoView
+          Left = 669.315400000000000000
+          Top = 54.803149609999990000
+          Width = 75.590551181102400000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'QCorrig'#233)
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo35: TfrxMemoView
+          Left = 972.441560000000000000
+          Top = 54.803149609999990000
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PSAval')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo36: TfrxMemoView
+          Left = 2.000000000000000000
+          Top = 54.803149606299200000
+          Width = 37.795275590000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NT')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo38: TfrxMemoView
+          Left = 247.110390000000000000
+          Top = 8.338590000000011000
+          Width = 566.929500000000000000
+          Height = 45.354360000000000000
+          ShowHint = False
+          Color = xFFFDBD97
+          Font.Name = '@Arial Unicode MS'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -24.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'R'#233'seau de distribution')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo39: TfrxMemoView
+          Left = 821.378480000000000000
+          Top = 54.803149609999990000
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'CPAval')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo41: TfrxMemoView
+          Left = 38.795300000000000000
+          Top = 54.803149606299200000
+          Width = 37.795275590000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'MP')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo42: TfrxMemoView
+          Left = 76.370130000000000000
+          Top = 54.803149606299200000
+          Width = 37.795275590000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'MA')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object MasterData3: TfrxMasterData
+        Height = 23.811023620000000000
+        Top = 548.031850000000000000
+        Width = 1046.929810000000000000
+        DataSet = frxDBDataset2
+        DataSetName = 'frxDBDataset2'
+        RowCount = 0
+        object Memo45: TfrxMemoView
+          Left = 303.000000000000000000
+          Top = 0.755905510000047800
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset2."MP"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo46: TfrxMemoView
+          Left = 416.338590000000000000
+          Top = 0.755905510000047800
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset2."Som DH">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo48: TfrxMemoView
+          Left = 528.787570000000000000
+          Top = 0.755905510000047800
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset2."Som DH/Q">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo49: TfrxMemoView
+          Left = 642.189240000000000000
+          Top = 0.755905510000047800
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset2."Dq(m3/s)">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object Header3: TfrxHeader
+        Height = 76.590585350000000000
+        Top = 453.543600000000000000
+        Width = 1046.929810000000000000
+        object Memo60: TfrxMemoView
+          Left = 415.779530000000000000
+          Top = 54.803149609999990000
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Som DH')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo62: TfrxMemoView
+          Left = 528.787570000000000000
+          Top = 54.803149609999990000
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Som DH/Q')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo63: TfrxMemoView
+          Left = 642.189240000000000000
+          Top = 54.803149609999990000
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Dq(m3/s)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo72: TfrxMemoView
+          Left = 302.559060000000000000
+          Top = 7.338590000000011000
+          Width = 453.543600000000000000
+          Height = 45.354360000000000000
+          ShowHint = False
+          Color = xFFFDBD97
+          Font.Name = '@Arial Unicode MS'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -24.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Erreur Pour Chaque Maille')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo74: TfrxMemoView
+          Left = 302.779530000000000000
+          Top = 54.803149609999990000
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Num Maille')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSet = FDQuery1
+    BCDToCurrency = False
+    Left = 112
+    Top = 16
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=C:\Users\VPoint\Documents\test.db'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    Left = 32
+    Top = 64
+  end
+  object FDQuery1: TFDQuery
+    ConstraintsEnabled = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      
+        'Select NAmont,NAval,[Qp(m3/s)],[DC(m)],TC,[DN(m)],[V(m/s)],[PDCT' +
+        '(m)],[CPR(m)],[CP1(m)],[PSAmont(m.c.e)],[PSAval(m.c.e)] from VRe' +
+        'sulta_TReservoir where ID_Project =9'
+      'Select project from Logins where ID_Project =1')
+    Left = 112
+    Top = 64
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 488
+    Top = 80
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 480
+    Top = 16
+  end
+  object FDQuery2: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      
+        'select MP,printf("%.5f",[Som DH]) AS [Som DH],printf("%.5f",[Som' +
+        ' DH/Q]) AS [Som DH/Q],printf("%.5f",[D q(m3/s)]) AS [Dq(m3/s)] f' +
+        'rom Erreur_mailles where ID_Project=1')
+    Left = 192
+    Top = 64
+  end
+  object FDQuery3: TFDQuery
+    ConstraintsEnabled = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      
+        'select NT,NAmont,NAval,[Qp(m3/s)],[DC(m)],TC,[DN(m)],[V(m/s)],[P' +
+        'DCT(m)],[CPAmont(m)],[CPAval(m)],[PSAmont(m.c.e)],[PSAval(m.c.e)' +
+        '] from VResulta_TranconRamifie where ID_Project = 9')
+    Left = 280
+    Top = 64
+  end
+  object frxDBDataset2: TfrxDBDataset
+    UserName = 'frxDBDataset2'
+    CloseDataSource = False
+    DataSet = FDQuery2
+    BCDToCurrency = False
+    Left = 200
+    Top = 16
+  end
+  object frxDBDataset3: TfrxDBDataset
+    UserName = 'frxDBDataset3'
+    CloseDataSource = False
+    DataSet = FDQuery3
+    BCDToCurrency = False
+    Left = 280
+    Top = 16
+  end
+  object frxBMPExport1: TfrxBMPExport
+    FileName = 'C:\Users\VPoint\Desktop\d.bmp'
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    CreationTime = 42399.657204282400000000
+    DataOnly = False
+    Left = 152
+    Top = 184
+  end
+  object frxRTFExport1: TfrxRTFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    DataOnly = False
+    PictureType = gpPNG
+    OpenAfterExport = True
+    Wysiwyg = False
+    Creator = 'Group VPoint Developer'
+    SuppressPageHeadersFooters = False
+    HeaderFooterMode = hfText
+    AutoSize = False
+    Left = 248
+    Top = 184
+  end
+  object frxHTMLExport1: TfrxHTMLExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    DataOnly = False
+    OpenAfterExport = True
+    FixedWidth = True
+    Background = False
+    Centered = False
+    EmptyLines = True
+    Print = False
+    PictureType = gpPNG
+    Left = 48
+    Top = 184
+  end
+  object frxReport2: TfrxReport
+    Version = '2.3.4'
+    DotMatrixReport = False
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFullScreen, pbOutline, pbThumbnails, pbPageSetup, pbEdit, pbNavigator, pbClose]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 42393.626545787000000000
+    ReportOptions.LastChange = 42399.658955138890000000
+    ReportOptions.IsFMXReport = True
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      ''
+      'begin'
+      ''
+      'end.')
+    Left = 360
+    Top = 16
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end
+      item
+        DataSet = frxDBDataset3
+        DataSetName = 'frxDBDataset3'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      Orientation = poLandscape
+      PaperWidth = 297.000000000000000000
+      PaperHeight = 210.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        Height = 154.960629921260000000
+        Top = 18.897650000000000000
+        Width = 1046.929810000000000000
+        object Memo1: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 3.779530000000001000
+          Width = 1035.591220000000000000
+          Height = 102.047310000000000000
+          ShowHint = False
+          Color = xFF00CCFF
+          Font.Name = '@Arial Unicode MS'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -24.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            
+              'Calcul des R'#233'seau de Distribution d'#39'Eau Potable (R'#233'seau Ramifi'#233')' +
+              ' '
+            'Par la M'#233'thode du Mod'#233'le Rugueux de R'#233'f'#233'rence (MMR)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo14: TfrxMemoView
+          Left = 249.448980000000000000
+          Top = 109.606370000000000000
+          Width = 566.929499999999800000
+          Height = 45.354330710000000000
+          ShowHint = False
+          Color = xFFFDBD97
+          Font.Name = '@Arial Unicode MS'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -24.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'R'#233'sultats pour le tran'#231'on du reservoir')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 26.456710000000000000
+        Top = 272.126160000000000000
+        Width = 1046.929810000000000000
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+        RowCount = 0
+        object frxDBDataset1NAmont: TfrxMemoView
+          Left = 3.338590000000000000
+          Top = 0.779530000000022500
+          Width = 62.362204720000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'NAmont'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."NAmont"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1NAval: TfrxMemoView
+          Left = 64.944959999999990000
+          Top = 0.779530000000022500
+          Width = 62.362204720000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'NAval'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."NAval"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1DCm: TfrxMemoView
+          Left = 217.787570000000000000
+          Top = 0.779530000000022500
+          Width = 90.708661420000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'DC(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."DC(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1DNm: TfrxMemoView
+          Left = 308.189240000000000000
+          Top = 0.779530000000022500
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'DN(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."DN(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1TC: TfrxMemoView
+          Left = 395.472790000000000000
+          Top = 0.779530000000022500
+          Width = 94.110236220000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'TC'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."TC"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1Vms: TfrxMemoView
+          Left = 489.205010000000000000
+          Top = 0.779530000000022500
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'V(m/s)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."V(m/s)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1PDCTm: TfrxMemoView
+          Left = 575.929499999999800000
+          Top = 0.779530000000022500
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'PDCT(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."PDCT(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1CPRm: TfrxMemoView
+          Left = 662.520100000000000000
+          Top = 0.779530000000022500
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'CPR(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."CPR(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1CP1m: TfrxMemoView
+          Left = 738.465060000000000000
+          Top = 0.779530000000022500
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'CP1(m)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."CP1(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1PSAmontmce: TfrxMemoView
+          Left = 813.717070000000000000
+          Top = 0.779530000000022500
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'PSAmont(m.c.e)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."PSAmont(m.c.e)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1PSAvalmce: TfrxMemoView
+          Left = 927.221090000000000000
+          Top = 0.779530000000022500
+          Width = 113.763779530000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataField = 'PSAval(m.c.e)'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."PSAval(m.c.e)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo21: TfrxMemoView
+          Left = 127.165430000000000000
+          Top = 0.779530000000022500
+          Width = 90.708661420000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset1."Qp(m3/s)">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object Header1: TfrxHeader
+        Height = 22.677180000000000000
+        Top = 230.551330000000000000
+        Width = 1046.929810000000000000
+        object Memo2: TfrxMemoView
+          Left = 2.779530000000000000
+          Top = 1.000000000000000000
+          Width = 62.362204720000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NAmont')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo3: TfrxMemoView
+          Left = 65.165430000000000000
+          Top = 1.000000000000000000
+          Width = 62.362204720000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NAval')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo4: TfrxMemoView
+          Left = 218.346630000000000000
+          Top = 1.000000000000000000
+          Width = 90.708661420000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'DC (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo5: TfrxMemoView
+          Left = 308.189240000000000000
+          Top = 1.000000000000000000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'DN (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo6: TfrxMemoView
+          Left = 395.031850000000000000
+          Top = 1.000000000000000000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'TC')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo7: TfrxMemoView
+          Left = 738.465060000000000000
+          Top = 1.000000000000000000
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'CP1(m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo8: TfrxMemoView
+          Left = 813.717070000000000000
+          Top = 1.000000000000000000
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PSAmont(m.c.e)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo9: TfrxMemoView
+          Left = 576.386210000000000000
+          Top = 1.000000000000000000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PDCT (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo10: TfrxMemoView
+          Left = 488.984540000000000000
+          Top = 1.000000000000000000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'V (m/s)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo11: TfrxMemoView
+          Left = 662.315400000000000000
+          Top = 1.000000000000000000
+          Width = 75.590551180000010000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'CPR(m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo12: TfrxMemoView
+          Left = 927.441560000000000000
+          Top = 1.000000000000000000
+          Width = 113.385826770000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PSAval(m.c.e)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo34: TfrxMemoView
+          Left = 127.385900000000000000
+          Top = 1.000000000000000000
+          Width = 90.708661420000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Qp(m3/s)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object MasterData2: TfrxMasterData
+        Height = 22.677165354330700000
+        Top = 411.968770000000000000
+        Width = 1046.929810000000000000
+        DataSet = frxDBDataset3
+        DataSetName = 'frxDBDataset3'
+        RowCount = 0
+        object Memo13: TfrxMemoView
+          Left = 39.338590000000010000
+          Top = 0.755905509999991000
+          Width = 58.582677170000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."NAmont"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo15: TfrxMemoView
+          Left = 95.944959999999990000
+          Top = 0.755905509999991000
+          Width = 54.803149606299200000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."NAval"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo16: TfrxMemoView
+          Left = 235.787570000000000000
+          Top = 0.755905509999991000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."DC(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo17: TfrxMemoView
+          Left = 323.189240000000000000
+          Top = 0.755905509999991000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."DN(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo18: TfrxMemoView
+          Left = 410.472790000000000000
+          Top = 0.755905509999991000
+          Width = 94.488188976378000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."TC"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo19: TfrxMemoView
+          Left = 505.205010000000000000
+          Top = 0.755905509999991000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."V(m/s)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo20: TfrxMemoView
+          Left = 598.929500000000000000
+          Top = 0.755905509999991000
+          Width = 94.866141732283500000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."PDCT(m)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo22: TfrxMemoView
+          Left = 694.465060000000000000
+          Top = 0.755905511811022300
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset3."CPAmont(m)">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo23: TfrxMemoView
+          Left = 866.717070000000000000
+          Top = 0.755905511811022300
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."PSAmont(m.c.e)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo24: TfrxMemoView
+          Left = 953.221090000000000000
+          Top = 0.755905509999991000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."PSAval(m.c.e)"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo40: TfrxMemoView
+          Left = 781.142240000000000000
+          Top = 0.755905511811022300
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset3."CPAval(m)">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo37: TfrxMemoView
+          Left = 2.000000000000000000
+          Top = 0.755905511811022300
+          Width = 37.795275590000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset3."NT"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo41: TfrxMemoView
+          Left = 151.181200000000000000
+          Top = 0.755905509999991000
+          Width = 85.039370080000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = claWhite
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[(<frxDBDataset3."Qp(m3/s)">)]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object Header2: TfrxHeader
+        Height = 76.590585350000000000
+        Top = 317.480520000000000000
+        Width = 1046.929810000000000000
+        object Memo25: TfrxMemoView
+          Left = 38.188930000000000000
+          Top = 54.803149609999990000
+          Width = 58.582677170000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NAmont')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo26: TfrxMemoView
+          Left = 96.574830000000010000
+          Top = 54.803149609999990000
+          Width = 54.803149610000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NAval')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo27: TfrxMemoView
+          Left = 236.346630000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'DC (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo28: TfrxMemoView
+          Left = 323.189240000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'DN (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo29: TfrxMemoView
+          Left = 410.031850000000000000
+          Top = 54.803149609999990000
+          Width = 94.866141732283500000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'TC')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo30: TfrxMemoView
+          Left = 694.465060000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'CPAmont')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo31: TfrxMemoView
+          Left = 867.717070000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PSAmont')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo32: TfrxMemoView
+          Left = 599.386210000000000000
+          Top = 54.803149609999990000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PDCT (m)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo33: TfrxMemoView
+          Left = 504.984540000000000000
+          Top = 54.803149609999990000
+          Width = 94.488188980000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'V (m/s)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo36: TfrxMemoView
+          Left = 953.441560000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'PSAval')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo38: TfrxMemoView
+          Left = 2.000000000000000000
+          Top = 54.803149609999990000
+          Width = 37.795275590000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NT')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo39: TfrxMemoView
+          Left = 247.110390000000000000
+          Top = 8.338590000000011000
+          Width = 566.929499999999800000
+          Height = 45.354360000000000000
+          ShowHint = False
+          Color = xFFFDBD97
+          Font.Name = '@Arial Unicode MS'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -24.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'R'#233'sultats pour les tout le tran'#231'on du r'#233'seau')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo42: TfrxMemoView
+          Left = 781.378480000000000000
+          Top = 54.803149609999990000
+          Width = 86.929133859999990000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'CPAval')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo44: TfrxMemoView
+          Left = 150.960730000000000000
+          Top = 54.803149609999990000
+          Width = 85.039370080000000000
+          Height = 22.677165350000000000
+          ShowHint = False
+          Color = xFFFFCC00
+          Font.Name = 'Arial'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Qp(m3/s)')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+    end
+  end
+end

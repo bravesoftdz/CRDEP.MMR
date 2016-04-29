@@ -1,0 +1,537 @@
+object Result2: TResult2
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 601
+  ClientWidth = 562
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnCloseQuery = FormCloseQuery
+  DesignerMasterStyle = 0
+  object Image1: TImage
+    MultiResBitmap.Height = 388
+    MultiResBitmap.Width = 580
+    MultiResBitmap = <
+      item
+        Width = 600
+        Height = 600
+        PNG = {
+          89504E470D0A1A0A0000000D4948445200000258000002580806000000BE6698
+          DC000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          0B9E49444154785EEDDC417125410C05C12FA36887D8C810963F96F5C510EA98
+          79190A152F343D7BFFFE7F0000C87CFD7D010088CCF78F050B00A064C1020088
+          092C008098C0020088CD7383050090B2600100C4041600404C600100C4BC8305
+          0010B3600100C4041600404C600100C466CF0D160040C9820500101358000031
+          81050010F30E160040CC820500101358000031810500109BE7060B002065C102
+          0088092C008098C002008879070B002066C1020088092C008098C0020088CD9E
+          1B2C008092050B002026B0000062020B0020E61D2C008098050B002026B00000
+          62020B002036CF0D160040CA82050010135800003181050010F30E160040CC82
+          0500101358000031810500109B3D37580000250B1600404C600100C404160040
+          CC3B580000310B1600404C600100C4041600406C9E1B2C008094050B002026B0
+          000062020B0020E61D2C008098050B002026B0000062020B0020367B6EB00000
+          4A162C008098C0020088092C00809877B0000062162C008098C0020088092C00
+          80D83C37580000290B1600404C600100C404160040CC3B580000310B1600404C
+          600100C4041600406CF6DC600100942C58000031810500101358000031EF6001
+          00C42C580000318105001013580000B1796EB0000052162C008098C002008809
+          2C00809877B0000062162C008098C0020088092C0080D8ECB9C102002859B000
+          0062020B002026B0000062DEC102008859B0000062020B002026B0000062F3DC
+          600100A42C58000031810500101358000031EF600100C42C5800003181050010
+          13580000B1D97383050050B2600100C4041600404C600100C4BC83050010B360
+          0100C4041600404C600100C4E6B9C102004859B0000062020B002026B0000062
+          DEC102008859B0000062020B002026B0000062B3E7060B00A064C1020088092C
+          008098C002008879070B002066C1020088092C008098C0020088CD7383050090
+          B2600100C4041600404C600100C4BC83050010B3600100C4041600404C600100
+          C466CF0D160040C982050010135800003181050010F30E160040CC8205001013
+          58000031810500109BE7060B002065C1020088092C008098C002008879070B00
+          2066C1020088092C008098C0020088CD9E1B2C008092050B002026B000006202
+          0B0020E61D2C008098050B002026B0000062020B002036CF0D160040CA820500
+          10135800003181050010F30E160040CC820500101358000031810500109B3D37
+          580000250B1600404C600100C404160040CC3B580000310B1600404C600100C4
+          041600406C9E1B2C008094050B002026B0000062020B0020E61D2C008098050B
+          002026B0000062020B0020367B6EB000004A162C008098C0020088092C008098
+          77B0000062162C008098C0020088092C0080D83C37580000290B1600404C6001
+          00C404160040CC3B580000310B1600404C600100C4041600406CF6DC60010094
+          2C58000031810500101358000031EF600100C42C580000318105001013580000
+          B1796EB0000052162C008098C0020088092C00809877B0000062162C008098C0
+          020088092C0080D8ECB9C102002859B0000062020B002026B0000062DEC10200
+          8859B0000062020B002026B0000062F3DC600100A42C58000031810500101358
+          000031EF600100C42C580000318105001013580000B1D97383050050B2600100
+          C4041600404C600100C4BC83050010B3600100C4041600404C600100C4E6B9C1
+          02004859B0000062020B002026B0000062DEC102008859B0000062020B002026
+          B0000062B3E7060B00A064C1020088092C008098C002008879070B002066C102
+          0088092C008098C0020088CD7383050090B2600100C4041600404C600100C4BC
+          83050010B3600100C4041600404C600100C466CF0D160040C982050010135800
+          003181050010F30E160040CC820500101358000031810500109BE7060B002065
+          C1020088092C008098C002008879070B002066C1020088092C008098C0020088
+          CD9E1B2C008092050B002026B0000062020B0020E61D2C008098050B002026B0
+          000062020B002036CF0D160040CA82050010135800003181050010F30E160040
+          CC820500101358000031810500109B3D37580000250B1600404C600100C40416
+          0040CC3B580000310B1600404C600100C4041600406C9E1B2C008094050B0020
+          26B0000062020B0020E61D2C008098050B002026B0000062020B0020367B6EB0
+          00004A162C008098C0020088092C00809877B0000062162C008098C002008809
+          2C0080D83C37580000290B1600404C600100C404160040CC3B580000310B1600
+          404C600100C4041600406CF6DC600100942C58000031810500101358000031EF
+          600100C42C580000318105001013580000B1796EB0000052162C008098C00200
+          88092C00809877B0000062162C008098C0020088092C0080D8ECB9C102002859
+          B0000062020B002026B0000062DEC102008859B0000062020B002026B0000062
+          F3DC600100A42C58000031810500101358000031EF600100C42C580000318105
+          001013580000B1D97383050050B2600100C4041600404C600100C4BC83050010
+          B3600100C4041600404C600100C4E6B9C102004859B0000062020B002026B000
+          0062DEC102008859B0000062020B002026B0000062B3E7060B00A064C1020088
+          092C008098C002008879070B002066C1020088092C008098C0020088CD738305
+          0090B2600100C4041600404C600100C4BC83050010B3600100C4041600404C60
+          0100C466CF0D160040C982050010135800003181050010F30E160040CC820500
+          101358000031810500109BE7060B002065C1020088092C008098C00200887907
+          0B002066C1020088092C008098C0020088CD9E1B2C008092050B002026B00000
+          62020B0020E61D2C008098050B002026B0000062020B002036CF0D160040CA82
+          050010135800003181050010F30E160040CC820500101358000031810500109B
+          3D37580000250B1600404C600100C404160040CC3B580000310B1600404C6001
+          00C4041600406C9E1B2C008094050B002026B0000062020B0020E61D2C008098
+          050B002026B0000062020B0020367B6EB000004A162C008098C0020088092C00
+          809877B0000062162C008098C0020088092C0080D83C37580000290B1600404C
+          600100C404160040CC3B580000310B1600404C600100C4041600406CF6DC6001
+          00942C58000031810500101358000031EF600100C42C58000031810500101358
+          0000B1796EB0000052162C008098C0020088092C00809877B0000062162C0080
+          98C0020088092C0080D8ECB9C102002859B0000062020B002026B0000062DEC1
+          02008859B0000062020B002026B0000062F3DC600100A42C5800003181050010
+          1358000031EF600100C42C580000318105001013580000B1D97383050050B260
+          0100C4041600404C600100C4BC83050010B3600100C4041600404C600100C4E6
+          B9C102004859B0000062020B002026B0000062DEC102008859B0000062020B00
+          2026B0000062B3E7060B00A064C1020088092C008098C002008879070B002066
+          C1020088092C008098C0020088CD7383050090B2600100C4041600404C600100
+          C4BC83050010B3600100C4041600404C600100C466CF0D160040C98205001013
+          5800003181050010F30E160040CC820500101358000031810500109BE7060B00
+          2065C1020088092C008098C002008879070B002066C1020088092C008098C002
+          0088CD9E1B2C008092050B002026B0000062020B0020E61D2C008098050B0020
+          26B0000062020B002036CF0D160040CA82050010135800003181050010F30E16
+          0040CC820500101358000031810500109B3D37580000250B1600404C600100C4
+          04160040CC3B580000310B1600404C600100C4041600406C9E1B2C008094050B
+          002026B0000062020B0020E61D2C008098050B002026B0000062020B0020367B
+          6EB000004A162C008098C0020088092C00809877B0000062162C008098C00200
+          88092C0080D83C37580000290B1600404C600100C404160040CC3B580000310B
+          1600404C600100C4041600406CF6DC600100942C580000317F110200C42C5800
+          00318105001013580000318105001013580000318105001013580000A9CFE717
+          02A6001F6D531FAD0000000049454E44AE426082}
+        FileName = 'C:\Users\VPoint\Documents\imgid170771.jpg'
+      end>
+    Align = Client
+    Size.Width = 562.000000000000000000
+    Size.Height = 553.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+    object ScrollBox1: TScrollBox
+      Align = Client
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 562.000000000000000000
+      Size.Height = 484.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      AutoHide = False
+      ShowScrollBars = False
+      Viewport.Width = 562.000000000000000000
+      Viewport.Height = 484.000000000000000000
+      object ScrollBox2: TScrollBox
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 186.000000000000000000
+        Size.Width = 522.000000000000000000
+        Size.Height = 244.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        AutoHide = False
+        ShowScrollBars = False
+        Viewport.Width = 522.000000000000000000
+        Viewport.Height = 244.000000000000000000
+        object GroupBox2: TGroupBox
+          StyledSettings = [Family, Style, FontColor, Other]
+          Opacity = 0.699999988079071000
+          Margins.Top = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 1289.000000000000000000
+          Size.Height = 234.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'R'#233'seau de distribution'
+          TextSettings.Font.Size = 16.000000000000000000
+          TabOrder = 0
+          object StringGrid3: TStringGrid
+            Align = Bottom
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 62.000000000000000000
+            Size.Width = 1279.000000000000000000
+            Size.Height = 172.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            RowCount = 0
+            RowHeight = 32.000000000000000000
+            Viewport.Width = 1275.000000000000000000
+            Viewport.Height = 147.000000000000000000
+          end
+        end
+      end
+      object ScrollBox3: TScrollBox
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 522.000000000000000000
+        Size.Height = 156.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        AutoHide = False
+        ShowScrollBars = False
+        Viewport.Width = 522.000000000000000000
+        Viewport.Height = 156.000000000000000000
+        object GroupBox1: TGroupBox
+          StyledSettings = [Family, Style, FontColor, Other]
+          Opacity = 0.699999988079071000
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 12.000000000000000000
+          Size.Width = 1012.000000000000000000
+          Size.Height = 135.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Conduite de distribution principal'
+          TextSettings.Font.Size = 16.000000000000000000
+          TabOrder = 0
+          object StringGrid1: TStringGrid
+            Align = Bottom
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 64.000000000000000000
+            Size.Width = 1002.000000000000000000
+            Size.Height = 71.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            RowCount = 0
+            RowHeight = 32.000000000000000000
+            Viewport.Width = 998.000000000000000000
+            Viewport.Height = 46.000000000000000000
+          end
+        end
+      end
+      object ScrollBox4: TScrollBox
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 450.000000000000000000
+        Size.Width = 522.000000000000000000
+        Size.Height = 199.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        AutoHide = False
+        ShowScrollBars = False
+        Viewport.Width = 522.000000000000000000
+        Viewport.Height = 199.000000000000000000
+        object GroupBox4: TGroupBox
+          StyledSettings = [Family, Style, FontColor, Other]
+          Opacity = 0.699999988079071000
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 476.000000000000000000
+          Size.Height = 189.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Error pour chaque maille'
+          TextSettings.Font.Size = 16.000000000000000000
+          TabOrder = 0
+          object StringGrid2: TStringGrid
+            Align = Bottom
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 466.000000000000000000
+            Size.Height = 125.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            RowCount = 0
+            RowHeight = 32.000000000000000000
+            Viewport.Width = 462.000000000000000000
+            Viewport.Height = 100.000000000000000000
+          end
+          object BindNavigator2: TBindNavigator
+            Align = Bottom
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 157.000000000000000000
+            Size.Width = 466.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            DataSource = BindSourceDB2
+            VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbRefresh]
+            xRadius = 4.000000000000000000
+            yRadius = 4.000000000000000000
+          end
+        end
+      end
+    end
+    object btn_Nouvelle_Iteration: TButton
+      TabOrder = 1
+      Text = 'btn_Nouvelle_Iteration'
+      Visible = False
+    end
+    object btn_retablir_all: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 2
+      Text = 'Button1'
+      Visible = False
+    end
+    object btn_EnrgistreExcel: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 3
+      Text = 'Button1'
+      Visible = False
+    end
+    object btn_start: TButton
+      StaysPressed = True
+      Align = Bottom
+      ControlType = Platform
+      StyledSettings = [Family, Size, Style, FontColor, Other]
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 499.000000000000000000
+      Size.Width = 522.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Nouvelle It'#233'ration(0)'
+      TintColor = claLightskyblue
+      OnClick = btn_startClick
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 562.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    TintColor = claLightskyblue
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 482.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'R'#233'sultats & It'#233'ration'
+    end
+    object back: TButton
+      Align = Left
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'detailstoolbutton'
+      TabOrder = 1
+      Text = 'Choisie un type de reseau '
+      OnClick = backClick
+    end
+    object Calcul: TButton
+      Align = Right
+      ModalResult = 11
+      Position.X = 530.000000000000000000
+      Size.Width = 32.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cleareditbutton'
+      TabOrder = 0
+      OnClick = CalculClick
+    end
+  end
+  object Rectangle1: TRectangle
+    Align = Contents
+    Fill.Color = claBlack
+    Opacity = 0.000000000000000000
+    Sides = []
+    Size.Width = 763.000000000000000000
+    Size.Height = 706.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    OnClick = Rectangle1Click
+  end
+  object Rectangle11: TRectangle
+    Align = Scale
+    Fill.Color = claWhite
+    Position.Y = 48.000000000000000000
+    Sides = []
+    Size.Width = 150.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Stroke.Thickness = 0.000000000000000000
+    Stroke.Dash = Custom
+    Visible = False
+    object Button2: TButton
+      Align = VertCenter
+      Position.Y = -1.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Enregister Excel'
+      TextSettings.HorzAlign = Leading
+      TintColor = claWhite
+      object ColorAnimation2: TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'TintColor'
+        StartValue = claWhite
+        StartFromCurrent = True
+        StopValue = claDeepskyblue
+        Trigger = 'IsFocused=true'
+      end
+      object ColorAnimation5: TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'TintColor'
+        StartValue = claDeepskyblue
+        StartFromCurrent = True
+        StopValue = claWhite
+        Trigger = 'IsPressed=false'
+      end
+    end
+    object Button3: TButton
+      Align = Bottom
+      Position.Y = 39.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Retablir Calcul'
+      TextSettings.HorzAlign = Leading
+      TintColor = claWhite
+      OnClick = Button3Click
+      object ColorAnimation3: TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'TintColor'
+        StartValue = claWhite
+        StartFromCurrent = True
+        StopValue = claDeepskyblue
+        Trigger = 'IsPressed=true'
+      end
+      object ColorAnimation6: TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'TintColor'
+        StartValue = claDeepskyblue
+        StartFromCurrent = True
+        StopValue = claWhite
+        Trigger = 'IsPressed=false'
+      end
+    end
+    object Rectangle13: TRectangle
+      Align = Bottom
+      Position.Y = 38.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Rectangle2: TRectangle
+      Align = Bottom
+      Position.Y = 79.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite')
+    LoginPrompt = False
+    Left = 176
+    Top = 16
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      '')
+    Left = 344
+    Top = 112
+  end
+  object FDQuery2: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      '')
+    Left = 360
+    Top = 264
+  end
+  object FDQuery3: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      '')
+    Left = 160
+    Top = 496
+  end
+  object FDQuery4: TFDQuery
+    Connection = FDConnection1
+    Left = 248
+    Top = 16
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDQuery1
+    ScopeMappings = <>
+    Left = 280
+    Top = 136
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 100
+    Top = 13
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+    object LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      GridControl = StringGrid3
+      Columns = <>
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = StringGrid2
+      Columns = <>
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = FDQuery2
+    ScopeMappings = <>
+    Left = 184
+    Top = 304
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = FDQuery3
+    ScopeMappings = <>
+    Left = 216
+    Top = 488
+  end
+end

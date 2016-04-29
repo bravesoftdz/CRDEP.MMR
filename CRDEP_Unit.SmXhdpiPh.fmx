@@ -1,0 +1,39 @@
+inherited Form2_SmXhdpiPh: TForm2_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 3
+  inherited Image1: TImage
+    MultiResBitmap.Height = 608
+    MultiResBitmap.Width = 1136
+    Size.Width = 250.000000000000000000
+    Size.Height = 263.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 250.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 154.000000000000000000
+    end
+    inherited btn_exit: TButton
+      Position.X = 202.000000000000000000
+    end
+  end
+  inherited btn_start: TButton
+    Position.Y = 321.000000000000000000
+    Size.Width = 210.000000000000000000
+  end
+  inherited Rectangle1: TRectangle
+    Size.Width = 250.000000000000000000
+    Size.Height = 375.000000000000000000
+  end
+  inherited Rectangle2: TRectangle
+    Position.Y = 87.000000000000000000
+    Size.Width = 210.000000000000000000
+  end
+  inherited MenuBar1: TMenuBar
+    inherited fichier: TMenuItem
+      inherited MenuItem3: TMenuItem
+        Visible = False
+      end
+    end
+  end
+end

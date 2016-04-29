@@ -1,0 +1,57 @@
+inherited Form5_LgXhdpiTb: TForm5_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 384.000000000000000000
+    end
+    inherited Calcul: TButton
+      Position.X = 432.000000000000000000
+    end
+  end
+  inherited Image1: TImage
+    MultiResBitmap.Height = 388
+    MultiResBitmap.Width = 580
+    Size.Width = 480.000000000000000000
+    Size.Height = 781.000000000000000000
+    inherited ScrollBox1: TScrollBox
+      Size.Width = 480.000000000000000000
+      Size.Height = 776.000000000000000000
+      Viewport.Width = 475.000000000000000000
+      Viewport.Height = 771.000000000000000000
+      inherited ScrollBox2: TScrollBox
+        Size.Width = 145.000000000000000000
+        Viewport.Width = 140.000000000000000000
+        Viewport.Height = 112.000000000000000000
+      end
+      inherited ScrollBox3: TScrollBox
+        Size.Width = 455.000000000000000000
+        Viewport.Width = 450.000000000000000000
+        Viewport.Height = 135.000000000000000000
+        inherited GroupBox1: TGroupBox
+          inherited StringGrid1: TStringGrid
+            Opacity = 0.800000011920929000
+            Viewport.Width = 778.000000000000000000
+            Viewport.Height = 33.000000000000000000
+          end
+        end
+      end
+      inherited ScrollBox4: TScrollBox
+        Size.Width = 455.000000000000000000
+        Viewport.Width = 450.000000000000000000
+        Viewport.Height = 233.000000000000000000
+        inherited GroupBox3: TGroupBox
+          inherited StringGrid2: TStringGrid
+            Opacity = 0.800000011920929000
+            Margins.Bottom = 10.000000000000000000
+            Size.Height = 158.000000000000000000
+            Viewport.Width = 1070.000000000000000000
+            Viewport.Height = 126.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

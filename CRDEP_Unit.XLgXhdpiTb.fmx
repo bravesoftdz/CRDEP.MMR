@@ -1,0 +1,24 @@
+inherited Form2_XLgXhdpiTb: TForm2_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 3
+  inherited Image1: TImage
+    MultiResBitmap.Height = 608
+    MultiResBitmap.Width = 1136
+    Size.Width = 800.000000000000000000
+    Size.Height = 1143.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 800.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 704.000000000000000000
+    end
+    inherited btn_Setting: TButton
+      Position.X = 752.000000000000000000
+    end
+  end
+  inherited btn_start: TButton
+    Position.Y = 1201.000000000000000000
+    Size.Width = 760.000000000000000000
+  end
+end

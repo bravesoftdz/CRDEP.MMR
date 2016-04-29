@@ -1,0 +1,13 @@
+inherited Form3_SmXhdpiPh: TForm3_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 250.000000000000000000
+    inherited Label1: TLabel
+      Align = Client
+      Size.Width = 202.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+end

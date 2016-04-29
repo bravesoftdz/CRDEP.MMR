@@ -1,0 +1,245 @@
+inherited Form2_Windows: TForm2_Windows
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = SizeToolWin
+  Caption = 'CRDEP MMR'
+  ClientHeight = 476
+  ClientWidth = 778
+  DesignerMasterStyle = 0
+  inherited Image1: TImage
+    MultiResBitmap.Height = 608
+    MultiResBitmap.Width = 1136
+    Size.Width = 778.000000000000000000
+    Size.Height = 476.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 762.000000000000000000
+    Visible = False
+    inherited Label1: TLabel
+      Size.Width = 666.000000000000000000
+    end
+    inherited btn_exit: TButton
+      Position.X = 714.000000000000000000
+    end
+  end
+  inherited btn_start: TButton
+    Align = None
+    Position.X = 312.000000000000000000
+    Position.Y = 414.000000000000000000
+    Size.Width = 177.000000000000000000
+    Visible = False
+  end
+  inherited Rectangle2: TRectangle
+    Margins.Left = 181.000000000000000000
+    Margins.Right = 181.000000000000000000
+    Position.X = 181.000000000000000000
+    Position.Y = 46.000000000000000000
+    Size.Width = 416.000000000000000000
+    Size.Height = 383.000000000000000000
+    inherited GroupBox1: TGroupBox
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 377.000000000000000000
+      Size.Height = 169.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Creation d'#39'un nouveau fichier'
+      inherited Edit1: TEdit
+        Position.X = 150.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 209.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Size, FontColor]
+      end
+      inherited Edit2: TEdit
+        Position.X = 150.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Height = 33.000000000000000000
+      end
+      inherited Text1: TText
+        Position.X = 8.000000000000000000
+        Position.Y = 74.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Mot de passe'
+      end
+      inherited Text2: TText
+        Position.X = 8.000000000000000000
+        Position.Y = 34.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 35.000000000000000000
+      end
+      inherited Button6: TButton
+        Position.X = 279.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'OK'
+        OnClick = Button6Click
+      end
+      inherited Button7: TButton
+        Position.X = 176.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 80.000000000000000000
+        Text = 'Quitter'
+        OnClick = Button7Click
+      end
+    end
+    inherited GroupBox2: TGroupBox
+      Position.X = 16.000000000000000000
+      Position.Y = 192.000000000000000000
+      Size.Width = 377.000000000000000000
+      Size.Height = 177.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Rappeler un fichier existant'
+      inherited Edit4: TEdit
+        Position.X = 150.000000000000000000
+        Position.Y = 80.000000000000000000
+        Size.Width = 209.000000000000000000
+        Size.Height = 33.000000000000000000
+      end
+      inherited Text3: TText
+        Position.X = 8.000000000000000000
+        Position.Y = 43.000000000000000000
+        Size.Height = 35.000000000000000000
+        Text = 'Nom du fichier'
+      end
+      inherited Text4: TText
+        Position.X = 8.000000000000000000
+        Position.Y = 83.000000000000000000
+        Size.Height = 35.000000000000000000
+      end
+      inherited Button8: TButton
+        Position.X = 280.000000000000000000
+        Position.Y = 131.000000000000000000
+        Size.Width = 80.000000000000000000
+        OnClick = Button8Click
+      end
+      inherited Button9: TButton
+        Position.X = 176.000000000000000000
+        Position.Y = 131.000000000000000000
+        Size.Width = 80.000000000000000000
+        OnClick = Button9Click
+      end
+      inherited ComboEdit1: TComboEdit
+        Position.X = 150.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 209.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  inherited Rectangle5: TRectangle
+    Margins.Left = 181.000000000000000000
+    Margins.Right = 181.000000000000000000
+    Position.X = 181.000000000000000000
+    Position.Y = 142.000000000000000000
+    Size.Width = 416.000000000000000000
+    inherited Label3: TLabel
+      Size.Width = 396.000000000000000000
+    end
+    inherited Pwd: TEdit
+      Size.Width = 366.000000000000000000
+    end
+    inherited Rectangle6: TRectangle
+      Size.Width = 406.000000000000000000
+      inherited Cancel: TButton
+        Size.Width = 201.000000000000000000
+      end
+      inherited Confirmer: TButton
+        Position.X = 200.000000000000000000
+        Size.Width = 206.000000000000000000
+      end
+      inherited Rectangle7: TRectangle
+        Position.X = 200.000000000000000000
+      end
+    end
+    inherited CheckBox1: TCheckBox
+      Size.Width = 366.000000000000000000
+    end
+  end
+  inherited Rectangle8: TRectangle
+    Margins.Left = 181.000000000000000000
+    Margins.Right = 181.000000000000000000
+    Position.X = 181.000000000000000000
+    Position.Y = 142.000000000000000000
+    Size.Width = 416.000000000000000000
+    inherited Label4: TLabel
+      Size.Width = 396.000000000000000000
+    end
+    inherited Rectangle9: TRectangle
+      Size.Width = 406.000000000000000000
+      inherited close_chois: TButton
+        Size.Width = 201.000000000000000000
+      end
+      inherited btn_chois: TButton
+        Position.X = 200.000000000000000000
+        Size.Width = 206.000000000000000000
+      end
+      inherited Rectangle10: TRectangle
+        Position.X = 200.000000000000000000
+      end
+    end
+    inherited RadioButton1: TRadioButton
+      Size.Width = 376.000000000000000000
+    end
+    inherited RadioButton2: TRadioButton
+      Size.Width = 376.000000000000000000
+    end
+  end
+  inherited MenuBar1: TMenuBar
+    Size.Width = 778.000000000000000000
+    inherited fichier: TMenuItem
+      Text = 'File'
+      inherited Nouveau_projet: TMenuItem
+        Text = 'Ouvrez le projet'
+        OnClick = Nouveau_projetClick
+      end
+      inherited MenuItem3: TMenuItem
+        Text = 'Fermez le projet'
+        OnClick = MenuItem3Click
+      end
+      inherited MenuItem2: TMenuItem
+        Text = 'Supprimer projet'
+        OnClick = MenuItem2Click
+      end
+      inherited Exit: TMenuItem
+        OnClick = ExitClick
+      end
+    end
+    inherited Option: TMenuItem
+      inherited Mod_pass: TMenuItem
+        OnClick = Mod_passClick
+      end
+    end
+    inherited Help: TMenuItem
+      inherited propos: TMenuItem
+        OnClick = proposClick
+      end
+      inherited Aide: TMenuItem
+        OnClick = AideClick
+      end
+    end
+  end
+  inherited FDConnection1: TFDConnection
+    Left = 96
+    Top = 80
+  end
+  inherited FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 96
+    Top = 24
+  end
+  inherited FDGUIxErrorDialog1: TFDGUIxErrorDialog
+    Left = 104
+  end
+  inherited FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Left = 128
+    Top = 344
+  end
+  inherited FDQuery1: TFDQuery
+    Left = 112
+    Top = 192
+  end
+end

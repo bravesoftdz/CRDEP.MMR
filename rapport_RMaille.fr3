@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="2.3.4" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" DotMatrixReport="False" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42392.6968843866" ReportOptions.Description.Text="" ReportOptions.LastChange="42393.5864640162" ReportOptions.IsFMXReport="True" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C656674023003546F7002080844617461736574730101063420446174615365743D22667278444244617461736574312220446174615365744E616D653D2266727844424461746173657431220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" Height="30.23624" Left="0" Top="112" Width="740.409927" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" RowCount="0">
+      <TfrxLineView Name="Line2" Left="0.77953" Top="0" Width="737.00835" Height="0" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line3" Left="69.26778" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line4" Left="121.87415" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line7" Left="189.59864" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line8" Left="258.98454" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line9" Left="391.76407" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line11" Left="470.91373" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line18" Left="0.77953" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line19" Left="739.00835" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line5" Left="1" Top="30.23624" Width="737.00835" Height="0" ShowHint="False" Diagonal="True"/>
+      <TfrxMemoView Name="frxDBDataset1NAmont" Left="5.55906" Top="3.77952999999999" Width="45.35436" Height="18.89765" ShowHint="False" DataField="NAmont" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;NAmont&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1NAval" Left="70.82684" Top="3.77952999999999" Width="45.35436" Height="18.89765" ShowHint="False" DataField="NAval" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;NAval&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1DCm" Left="126.7718" Top="3.77952999999999" Width="60.47248" Height="18.89765" ShowHint="False" DataField="DC(m)" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;DC(m)&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1DNm" Left="193.71676" Top="3.77952999999999" Width="64.25201" Height="18.89765" ShowHint="False" DataField="DN(m)" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;DN(m)&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1TC" Left="263.32313" Top="3.77952999999999" Width="45.35436" Height="18.89765" ShowHint="False" DataField="TC" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;TC&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1Vms" Left="326.1577" Top="3.77952999999999" Width="56.69295" Height="18.89765" ShowHint="False" DataField="V(m/s)" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;V(m/s)&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1PDCTm" Left="397.42548" Top="3.77952999999999" Width="68.03154" Height="18.89765" ShowHint="False" DataField="PDCT(m)" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;PDCT(m)&#34;]"/>
+      <TfrxLineView Name="Line20" Left="322.1577" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line25" Left="541.9295" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line26" Left="606.40198" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line27" Left="670.87446" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxMemoView Name="frxDBDataset1CPRm" Left="473.11843" Top="3.77952999999999" Width="64.25201" Height="18.89765" ShowHint="False" DataField="CPR(m)" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;CPR(m)&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1CP1m" Left="545.70903" Top="3.77952999999999" Width="49.13389" Height="18.89765" ShowHint="False" DataField="CP1(m)" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;CP1(m)&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1PSAmontmce" Left="613.18151" Top="3.77952999999999" Width="49.13389" Height="18.89765" ShowHint="False" DataField="PSAmont(m.c.e)" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;PSAmont(m.c.e)&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1PSAvalmce" Left="674.65399" Top="3.77952999999999" Width="52.91342" Height="18.89765" ShowHint="False" DataField="PSAval(m.c.e)" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;PSAval(m.c.e)&#34;]"/>
+    </TfrxMasterData>
+    <TfrxColumnHeader Name="ColumnHeader1" Height="30.23624" Left="0" Top="64" Width="740.409927">
+      <TfrxLineView Name="Line1" Left="1" Top="0" Width="737.00835" Height="0" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line6" Left="69.26778" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line10" Left="121.87415" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line12" Left="189.59864" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line13" Left="258.98454" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line14" Left="541.9295" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line15" Left="606.40198" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxMemoView Name="Memo1" Left="4.55906" Top="3.77953000000002" Width="60.47248" Height="18.89765" ShowHint="False" Text="NAmont"/>
+      <TfrxMemoView Name="Memo2" Left="70.82684" Top="3.77953000000002" Width="45.35436" Height="18.89765" ShowHint="False" Text="NAval"/>
+      <TfrxMemoView Name="Memo3" Left="126.7718" Top="3.77953000000002" Width="41.57483" Height="18.89765" ShowHint="False" Text="DC (m)"/>
+      <TfrxMemoView Name="Memo4" Left="193.71676" Top="3.77953000000002" Width="56.69295" Height="18.89765" ShowHint="False" Text="DN (m)"/>
+      <TfrxMemoView Name="Memo5" Left="263.32313" Top="3.77953000000002" Width="45.35436" Height="18.89765" ShowHint="False" Text="TC"/>
+      <TfrxMemoView Name="Memo6" Left="549.48856" Top="3.77953000000002" Width="41.57483" Height="18.89765" ShowHint="False" Text="CP1(m)"/>
+      <TfrxMemoView Name="Memo7" Left="613.18151" Top="3.77953000000002" Width="45.35436" Height="18.89765" ShowHint="False" Text="PSAmont(m.c.e)"/>
+      <TfrxLineView Name="Line17" Left="739.00835" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line16" Left="0.77953" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line21" Left="321.03958" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line22" Left="390.98454" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxLineView Name="Line23" Left="470.1342" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+      <TfrxMemoView Name="Memo8" Left="395.10266" Top="3.77953000000002" Width="71.81107" Height="18.89765" ShowHint="False" Text="PDCT (m)"/>
+      <TfrxMemoView Name="Memo9" Left="326.1577" Top="3.77953000000002" Width="56.69295" Height="18.89765" ShowHint="False" Text="V (m/s)"/>
+      <TfrxMemoView Name="Memo10" Left="473.91373" Top="3.77953000000002" Width="64.25201" Height="18.89765" ShowHint="False" Text="CPR(m)"/>
+      <TfrxMemoView Name="Memo11" Left="674.65399" Top="3.77953000000002" Width="45.35436" Height="18.89765" ShowHint="False" Text="PSAval(m.c.e)"/>
+      <TfrxLineView Name="Line24" Left="670.87446" Top="0" Width="0" Height="30.23624" ShowHint="False" Diagonal="True"/>
+    </TfrxColumnHeader>
+    <TfrxReportTitle Name="ReportTitle1" Height="30.23624" Left="0" Top="16" Width="740.409927">
+      <TfrxMemoView Name="Memo12" Left="3.77953" Top="2" Width="733.22882" Height="26.45671" ShowHint="False" Font.Name="segu" Font.PixelsPerInch="96" Font.Style="0" Font.Color="-16777216" Font.Height="-16" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Résultats pour le trançon du reservoir"/>
+    </TfrxReportTitle>
+  </TfrxReportPage>
+</TfrxReport>

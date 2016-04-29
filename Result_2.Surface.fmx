@@ -1,0 +1,63 @@
+inherited Result2_Surface: TResult2_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 0
+  inherited Image1: TImage
+    MultiResBitmap.Height = 388
+    MultiResBitmap.Width = 580
+    Size.Width = 1080.000000000000000000
+    Size.Height = 1872.000000000000000000
+    inherited ScrollBox1: TScrollBox
+      Size.Width = 1080.000000000000000000
+      Size.Height = 1803.000000000000000000
+      Viewport.Width = 1080.000000000000000000
+      Viewport.Height = 1803.000000000000000000
+      inherited ScrollBox2: TScrollBox
+        Size.Width = 1040.000000000000000000
+        Viewport.Width = 1040.000000000000000000
+        Viewport.Height = 244.000000000000000000
+        inherited GroupBox2: TGroupBox
+          inherited StringGrid3: TStringGrid
+            Viewport.Width = 1275.000000000000000000
+            Viewport.Height = 147.000000000000000000
+          end
+        end
+      end
+      inherited ScrollBox3: TScrollBox
+        Size.Width = 1040.000000000000000000
+        Viewport.Width = 1040.000000000000000000
+        Viewport.Height = 156.000000000000000000
+        inherited GroupBox1: TGroupBox
+          inherited StringGrid1: TStringGrid
+            Viewport.Width = 998.000000000000000000
+            Viewport.Height = 46.000000000000000000
+          end
+        end
+      end
+      inherited ScrollBox4: TScrollBox
+        Size.Width = 1040.000000000000000000
+        Viewport.Width = 1040.000000000000000000
+        Viewport.Height = 199.000000000000000000
+        inherited GroupBox4: TGroupBox
+          inherited StringGrid2: TStringGrid
+            Viewport.Width = 462.000000000000000000
+            Viewport.Height = 100.000000000000000000
+          end
+        end
+      end
+    end
+    inherited btn_start: TButton
+      Position.Y = 1818.000000000000000000
+      Size.Width = 1040.000000000000000000
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 1080.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 1000.000000000000000000
+    end
+    inherited Calcul: TButton
+      Position.X = 1048.000000000000000000
+    end
+  end
+end

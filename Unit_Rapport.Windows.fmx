@@ -1,0 +1,221 @@
+inherited Form1_Windows: TForm1_Windows
+  BorderIcons = [biSystemMenu]
+  ClientHeight = 43
+  ClientWidth = 381
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inherited Print: TButton
+    Size.Width = 381.000000000000000000
+  end
+  inherited frxReport1: TfrxReport
+    ReportOptions.LastChange = 42392.914984965270000000
+    Top = 32
+    Datasets = <
+      item
+        DataSet = Form1.frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end>
+    Variables = <>
+    Style = <>
+    inherited Page1: TfrxReportPage
+      inherited MasterData1: TfrxMasterData
+        inherited frxDBDataset1NT: TfrxMemoView
+          Left = 653.858690000000000000
+          Top = 3.779530000000001000
+          Width = 83.149660000000000000
+          DataField = ''
+          Memo.UTF8W = (
+            '[frxDBDataset1."NT"]')
+        end
+        inherited frxDBDataset1MP: TfrxMemoView
+          Left = 555.590910000000000000
+          Top = 3.779530000000001000
+          Width = 83.149660000000000000
+          DataField = ''
+          Memo.UTF8W = (
+            '[frxDBDataset1."MP"]')
+        end
+        inherited frxDBDataset1MA: TfrxMemoView
+          Left = 457.323130000000000000
+          Top = 3.779530000000001000
+          Width = 83.149660000000000000
+          DataField = ''
+          Memo.UTF8W = (
+            '[frxDBDataset1."MA"]')
+        end
+        inherited frxDBDataset1NAmont: TfrxMemoView
+          Top = 3.779530000000001000
+          Width = 83.149660000000000000
+          DataField = ''
+          Memo.UTF8W = (
+            '[frxDBDataset1."NAmont"]')
+        end
+        inherited frxDBDataset1NAval: TfrxMemoView
+          Left = 226.771800000000000000
+          Top = 3.779530000000001000
+          Width = 83.149660000000000000
+          DataField = ''
+          Memo.UTF8W = (
+            '[frxDBDataset1."NAval"]')
+        end
+        inherited frxDBDataset1Sens: TfrxMemoView
+          Left = 113.385900000000000000
+          Top = 3.779530000000001000
+          Width = 83.149660000000000000
+          DataField = ''
+          Memo.UTF8W = (
+            '[frxDBDataset1."Sens"]')
+        end
+        inherited frxDBDataset1Q: TfrxMemoView
+          Left = 7.559060000000000000
+          Top = 3.779530000000001000
+          Width = 83.149660000000000000
+          DataField = ''
+          Memo.UTF8W = (
+            '[frxDBDataset1."Q"]')
+        end
+        inherited Line2: TfrxLineView
+          Left = 739.008350000000000000
+          Width = 0.000000000000000000
+          Height = 30.236240000000000000
+        end
+        inherited Line3: TfrxLineView
+          Left = 647.079160000000000000
+        end
+        inherited Line4: TfrxLineView
+          Left = 544.252320000000100000
+        end
+        inherited Line7: TfrxLineView
+          Left = 445.984540000000000000
+        end
+        inherited Line8: TfrxLineView
+          Left = 332.598640000000000000
+        end
+        inherited Line9: TfrxLineView
+          Left = 208.874150000000000000
+        end
+        inherited Line11: TfrxLineView
+          Left = 98.267780000000000000
+        end
+        inherited Line18: TfrxLineView
+          Left = 1.000000000000000000
+          Width = 737.008350000000000000
+          Height = 0.000000000000000000
+        end
+        inherited Line19: TfrxLineView
+          Left = 1.000000000000000000
+          Top = 30.236240000000010000
+          Width = 737.008350000000000000
+          Height = 0.000000000000000000
+        end
+        inherited Line5: TfrxLineView
+          Left = 739.008350000000000000
+          Top = 0.000000000000000000
+          Width = 0.000000000000000000
+          Height = 30.236240000000000000
+        end
+      end
+      inherited ColumnHeader1: TfrxColumnHeader
+        inherited Line1: TfrxLineView
+          Left = 0.779529999999999900
+          Width = 0.000000000000000000
+          Height = 30.236240000000000000
+        end
+        inherited Line6: TfrxLineView
+          Left = 647.299630000000000000
+        end
+        inherited Line10: TfrxLineView
+          Left = 544.252320000000100000
+        end
+        inherited Line12: TfrxLineView
+          Left = 445.984540000000000000
+        end
+        inherited Line13: TfrxLineView
+          Left = 332.598640000000000000
+        end
+        inherited Line14: TfrxLineView
+          Left = 208.874150000000000000
+        end
+        inherited Line15: TfrxLineView
+          Left = 98.267780000000000000
+        end
+        inherited Memo1: TfrxMemoView
+          Left = 653.858690000000000000
+          Top = 5.000000000000000000
+          Width = 79.370130000000000000
+          DataField = 'Q'
+          Memo.UTF8W = (
+            'NT')
+        end
+        inherited Memo2: TfrxMemoView
+          Left = 555.590910000000000000
+          Top = 5.000000000000000000
+          Width = 79.370130000000000000
+          DataField = 'Sens'
+          Memo.UTF8W = (
+            'MP')
+        end
+        inherited Memo3: TfrxMemoView
+          Left = 457.323130000000000000
+          Top = 5.000000000000000000
+          Width = 79.370130000000000000
+          DataField = 'NAval'
+          Memo.UTF8W = (
+            'MA')
+        end
+        inherited Memo4: TfrxMemoView
+          Top = 5.000000000000000000
+          Width = 79.370130000000000000
+          DataField = 'NAmont'
+          Memo.UTF8W = (
+            'NAmont')
+        end
+        inherited Memo5: TfrxMemoView
+          Left = 226.771800000000000000
+          Top = 5.000000000000000000
+          Width = 79.370130000000000000
+          DataField = 'MA'
+          Memo.UTF8W = (
+            'NAval')
+        end
+        inherited Memo6: TfrxMemoView
+          Left = 113.385900000000000000
+          Top = 5.000000000000000000
+          Width = 79.370130000000000000
+          DataField = 'MP'
+          Memo.UTF8W = (
+            'Sens')
+        end
+        inherited Memo7: TfrxMemoView
+          Left = 7.559060000000000000
+          Top = 5.000000000000000000
+          Width = 79.370130000000000000
+          DataField = 'NT'
+          Memo.UTF8W = (
+            'Q')
+        end
+        inherited Line17: TfrxLineView
+          Left = 0.779529999999999900
+          Width = 737.008350000000000000
+          Height = 0.000000000000000000
+        end
+        inherited Line16: TfrxLineView
+          Left = 0.000000000000000000
+          Width = 740.409927000000000000
+          Height = 980.410081999999900000
+          ArrowEnd = True
+          ArrowLength = 0
+          ArrowWidth = 7602296
+          Diagonal = True
+        end
+      end
+    end
+  end
+  inherited FDQuery1: TFDQuery
+    Active = False
+  end
+end

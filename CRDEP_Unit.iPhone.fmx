@@ -1,0 +1,48 @@
+inherited Form2_iPhone: TForm2_iPhone
+  ClientHeight = 460
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited Image1: TImage
+    MultiResBitmap.Height = 608
+    MultiResBitmap.Width = 1136
+    Size.Width = 320.000000000000000000
+    Size.Height = 352.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 228.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+    inherited btn_exit: TButton
+      Position.X = 272.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+    inherited btn_Setting: TButton
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited btn_start: TButton
+    Position.Y = 406.000000000000000000
+    Size.Width = 280.000000000000000000
+  end
+  inherited Rectangle1: TRectangle
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+  end
+  inherited Rectangle5: TRectangle
+    inherited Pwd: TEdit
+      Position.Y = 57.000000000000000000
+      Size.Height = 30.000000000000000000
+    end
+  end
+  inherited MenuBar1: TMenuBar
+    inherited fichier: TMenuItem
+      inherited MenuItem3: TMenuItem
+        Visible = False
+      end
+    end
+  end
+end

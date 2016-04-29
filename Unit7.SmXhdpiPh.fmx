@@ -1,0 +1,26 @@
+inherited Form7_SmXhdpiPh: TForm7_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 250.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 202.000000000000000000
+    end
+  end
+  inherited Image1: TImage
+    MultiResBitmap.Height = 388
+    MultiResBitmap.Width = 580
+    Size.Width = 250.000000000000000000
+    Size.Height = 327.000000000000000000
+  end
+  inherited Memo1: TMemo
+    Opacity = 0.400000005960464500
+    RotationCenter.X = 1.000000000000000000
+    RotationCenter.Y = 1.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 327.000000000000000000
+    Viewport.Width = 237.000000000000000000
+    Viewport.Height = 319.000000000000000000
+  end
+end

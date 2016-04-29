@@ -1,0 +1,130 @@
+inherited Result2_Windows: TResult2_Windows
+  BorderStyle = Single
+  ClientHeight = 539
+  ClientWidth = 1065
+  DesignerMasterStyle = 0
+  inherited Image1: TImage
+    MultiResBitmap.Height = 388
+    MultiResBitmap.Width = 580
+    Size.Width = 1065.000000000000000000
+    Size.Height = 539.000000000000000000
+    inherited ScrollBox1: TScrollBox
+      Size.Width = 1065.000000000000000000
+      Size.Height = 534.000000000000000000
+      Viewport.Width = 1065.000000000000000000
+      Viewport.Height = 534.000000000000000000
+      inherited ScrollBox2: TScrollBox
+        Align = None
+        Position.X = 19.000000000000000000
+        Position.Y = 266.000000000000000000
+        Size.Width = 1030.000000000000000000
+        Size.Height = 269.000000000000000000
+        Viewport.Width = 1030.000000000000000000
+        Viewport.Height = 269.000000000000000000
+        inherited GroupBox2: TGroupBox
+          Align = Client
+          Size.Width = 1030.000000000000000000
+          Size.Height = 259.000000000000000000
+          inherited StringGrid3: TStringGrid
+            Position.Y = 57.000000000000000000
+            Size.Width = 1020.000000000000000000
+            Size.Height = 202.000000000000000000
+            Viewport.Width = 1016.000000000000000000
+            Viewport.Height = 177.000000000000000000
+          end
+        end
+      end
+      inherited ScrollBox3: TScrollBox
+        Align = None
+        Position.X = 19.000000000000000000
+        Position.Y = 67.000000000000000000
+        Size.Width = 640.000000000000000000
+        Viewport.Width = 640.000000000000000000
+        Viewport.Height = 156.000000000000000000
+        inherited GroupBox1: TGroupBox
+          Align = Client
+          Size.Width = 630.000000000000000000
+          Size.Height = 146.000000000000000000
+          inherited StringGrid1: TStringGrid
+            Position.Y = 75.000000000000000000
+            Size.Width = 620.000000000000000000
+            Viewport.Width = 616.000000000000000000
+            Viewport.Height = 46.000000000000000000
+          end
+        end
+      end
+      inherited ScrollBox4: TScrollBox
+        Align = None
+        Position.X = 675.000000000000000000
+        Position.Y = 65.000000000000000000
+        Size.Width = 373.000000000000000000
+        Viewport.Width = 373.000000000000000000
+        Viewport.Height = 199.000000000000000000
+        inherited GroupBox4: TGroupBox
+          Position.Y = 3.000000000000000000
+          Size.Width = 363.000000000000000000
+          inherited StringGrid2: TStringGrid
+            Size.Width = 353.000000000000000000
+            Viewport.Width = 349.000000000000000000
+            Viewport.Height = 100.000000000000000000
+          end
+          inherited BindNavigator2: TBindNavigator
+            Size.Width = 353.000000000000000000
+          end
+        end
+      end
+    end
+    inherited btn_Nouvelle_Iteration: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nouvelle It'#233'ration (0)'
+      OnClick = btn_Nouvelle_IterationClick
+    end
+    inherited btn_retablir_all: TButton
+      Position.X = 736.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Retablir Calcul'
+      OnClick = btn_retablir_allClick
+    end
+    inherited btn_EnrgistreExcel: TButton
+      Position.X = 896.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Imprimer'
+      OnClick = btn_EnrgistreExcelClick
+    end
+    inherited btn_start: TButton
+      Position.Y = 478.000000000000000000
+      Size.Width = 1021.000000000000000000
+      Visible = False
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 1062.000000000000000000
+    Visible = False
+    inherited Label1: TLabel
+      Size.Width = 982.000000000000000000
+    end
+    inherited Calcul: TButton
+      Position.X = 1030.000000000000000000
+    end
+  end
+  inherited FDConnection1: TFDConnection
+    Left = 112
+    Top = 120
+  end
+  inherited FDQuery4: TFDQuery
+    Top = 88
+  end
+  inherited BindingsList1: TBindingsList
+    Left = 12
+    Top = 117
+  end
+end
